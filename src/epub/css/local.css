@@ -91,3 +91,11 @@ footer{
 #a-transaction-in-hearts-4 .telegram > p span:nth-of-type(1){
 	font-variant: initial;
 }
+
+#the-grand-dukes-rubies blockquote{
+	text-align: center;
+}
+
+#the-grand-dukes-rubies blockquote b{
+	font-variant: all-small-caps;
+}
