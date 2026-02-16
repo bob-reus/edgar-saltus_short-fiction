@@ -67,6 +67,11 @@ p span.i1{
 	text-indent: -1em;
 }
 
+span.elision{
+	margin: .5em;
+	margin-left: 3em;
+}
+
 /* Letters */
 .telegram{
 	font-style: normal;
