@@ -34,6 +34,35 @@ q{
 }
 /* End all epigraphs */
 
+/* Centered dedications */
+section[epub|type~="dedication"]{
+	text-align: center;
+}
+
+section[epub|type~="dedication"] > *{
+	display: inline-block;
+	margin: auto;
+	margin-top: 3em;
+	max-width: 80%;
+}
+
+@supports(display: flex){
+	section[epub|type~="dedication"]{
+		align-items: center;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: calc(98vh - 3em);
+		padding-top: 3em;
+	}
+
+	section[epub|type~="dedication"] > *{
+		margin: 0;
+	}
+}
+/* End centered dedications */
+
 /* Italicize non-English blockquotes */
 blockquote[xml|lang]{
 	font-style: italic;
@@ -71,6 +100,7 @@ span.elision{
 	margin: .5em;
 	margin-left: 3em;
 }
+/* End Poetry verse and songs */
 
 /* Letters */
 .telegram{
@@ -92,7 +122,67 @@ footer{
 	text-align: initial;
 	text-indent: 0;
 }
+/* End Letters */
 
+/* Dramatis Personae */
+[epub|type~="z3998:dramatis-personae"]{
+	text-align: center;
+}
+
+[epub|type~="z3998:dramatis-personae"] p{
+	text-indent: 0;
+}
+
+[epub|type~="z3998:dramatis-personae"] ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+[epub|type~="z3998:dramatis-personae"] ul li{
+	font-style: italic;
+	margin: 1em;
+}
+
+[epub|type~="z3998:dramatis-personae"] ul + p{
+	margin-top: 2em;
+}
+/* End Dramatis Personae */
+
+/* Front matter */
+section[epub|type~="dedication"],
+section[epub|type~="dramatis-personae"]{
+	break-after: always;
+	break-before: always;
+}
+
+section[epub|type~="dedication"]{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 40em;
+}
+
+section[epub|type~="dedication"] > footer{
+	font-style: italic;
+	margin-top: 3em;
+	text-align: left;
+	width: 100%;
+}
+
+section[epub|type~="dedication"] > p{
+	font-size: larger;
+	font-variant: all-small-caps;
+}
+
+#dedication-3 span{
+	font-size: smaller;
+}
+
+#dedication-3 b{
+	font-style: initial;
+}
+
+/* One-offs */
 #a-transaction-in-hearts-4 .telegram > p span:nth-of-type(1){
 	font-variant: initial;
 }
