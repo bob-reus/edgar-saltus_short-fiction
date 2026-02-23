@@ -113,7 +113,19 @@ footer{
 	text-align: right;
 }
 
-[epub|type~="z3998:signature"]{
+[epub|type~="z3998:letter"] header{
+	text-align: right;
+}
+
+[epub|type~="z3998:letter"] header + p{
+	text-indent: 0;
+}
+
+[epub|type~="z3998:salutation"] + p{
+	text-indent: 0;
+}
+
+p[epub|type~="z3998:signature"]{
 	font-variant: small-caps;
 }
 
@@ -193,4 +205,8 @@ section[epub|type~="dedication"] > p{
 
 #the-grand-dukes-rubies blockquote b{
 	font-variant: all-small-caps;
+}
+
+#madam-sapphira-18 blockquote{
+	text-align: center;
 }
