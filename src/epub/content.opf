@@ -19,6 +19,7 @@
 		<meta property="a11y:certifiedBy" refines="#conformance-statement">Standard Ebooks</meta>
 		<meta property="schema:accessMode">textual</meta>
 		<meta property="schema:accessModeSufficient">textual</meta>
+		<meta property="schema:accessibilityFeature">alternativeText</meta>
 		<meta property="schema:accessibilityFeature">readingOrder</meta>
 		<meta property="schema:accessibilityFeature">structuralNavigation</meta>
 		<meta property="schema:accessibilityFeature">tableOfContents</meta>
@@ -28,57 +29,142 @@
 		<link href="onix.xml" media-type="application/xml" properties="onix" rel="record"/>
 		<dc:title id="title">Short Fiction</dc:title>
 		<meta property="file-as" refines="#title">Short Fiction</meta>
-		<dc:subject id="subject-1">SUBJECT_1</dc:subject>
-		<dc:subject id="subject-2">SUBJECT_2</dc:subject>
+		<dc:subject id="subject-1">Fiction</dc:subject>
+		<dc:subject id="subject-2">Short Stories</dc:subject>
+		<!-- Eden -->
+		<dc:subject id="subject-3">Married women -- Fiction</dc:subject>
+		<!-- Mary Magdalen -->
+		<dc:subject id="subject-4">Biographical fiction</dc:subject>
+		<dc:subject id="subject-5">Christian fiction</dc:subject>
+		<dc:subject id="subject-6">Bible -- History of Biblical events -- Fiction</dc:subject>
+		<dc:subject id="subject-7">Christian women saints -- Fiction</dc:subject>
 		<meta property="authority" refines="#subject-1">LCSH</meta>
-		<meta property="term" refines="#subject-1">LCSH_ID_1</meta>
+		<meta property="term" refines="#subject-1">sh85048050</meta>
 		<meta property="authority" refines="#subject-2">LCSH</meta>
-		<meta property="term" refines="#subject-2">LCSH_ID_2</meta>
-		<meta property="se:subject">TAG</meta>
-		<dc:description id="description">DESCRIPTION</dc:description>
-		<meta id="long-description" property="se:long-description" refines="#description">
-			LONG_DESCRIPTION
+		<meta property="term" refines="#subject-2">sh85121813</meta>
+		<meta property="authority" refines="#subject-3">LCSH</meta>
+		<meta property="term" refines="#subject-3">sh2008107257</meta>
+		<meta property="authority" refines="#subject-4">LCSH</meta>
+		<meta property="term" refines="#subject-4">sh85014149</meta>
+		<meta property="authority" refines="#subject-5">LCSH</meta>
+		<meta property="term" refines="#subject-5">sh85025090</meta>
+		<meta property="authority" refines="#subject-6">LCSH</meta>
+		<meta property="term" refines="#subject-6">sh85013656</meta>
+		<meta property="authority" refines="#subject-7">LCSH</meta>
+		<meta property="term" refines="#subject-7">sh2008100721</meta>
+		<meta property="authority" refines="#subject-7">LCSH</meta>
+		<meta property="term" refines="#subject-7">sh2008100721</meta>
+		<meta property="se:subject">Fiction</meta>
+		<meta property="se:subject">Shorts</meta>
+		<meta property="se:is-a-collection">true</meta>
+		<dc:description id="description">A collection of novellas and short stories by decadent New York author, Edgar Saltus.</dc:description>
+		<meta id="long-description" property="se:long-description" refines="#description">LONG_DESCRIPTION</meta>
+		<dc:language>en-US</dc:language>
+		<!-- Eden -->
+		<dc:source>https://www.gutenberg.org/ebooks/31924</dc:source>
+		<dc:source>https://archive.org/details/edenanepiso00edgarich</dc:source>
+		<!-- A Transaction in Hearts -->
+		<dc:source>https://catalog.hathitrust.org/Record/011256352</dc:source>
+		<!-- A Transient Guest, The Grand Duke's Rubies, A Modern Maid of Athens, Fausta -->
+		<dc:source>https://www.gutenberg.org/ebooks/33123</dc:source>
+		<dc:source>https://archive.org/details/transientguestan00saltiala</dc:source>
+		<!-- The Pace That Kills -->
+		<dc:source>https://www.gutenberg.org/ebooks/34401</dc:source>
+		<dc:source>https://archive.org/details/cu31924022037042</dc:source>
+		<!-- Mary Magdalen -->
+		<dc:source>https://www.gutenberg.org/ebooks/31510</dc:source>
+		<dc:source>https://archive.org/details/marymagdalenchro00saltrich</dc:source>
+		<!-- Madam Sapphira -->
+		<dc:source>https://archive.org/details/madamsapphira01salt</dc:source>
+		<!-- The Noose Matrimonial, page 95 -->
+		<dc:source>https://archive.org/details/sim_smart-set_1900-06_1_4</dc:source>
+		<!-- A Drama in a Dining-Room, page 80 -->
+		<dc:source>https://archive.org/details/sim_smart-set_1902-02_6_2</dc:source>
+		<!-- The Dear Departed, page 77 -->
+		<dc:source>https://www.google.com.ph/books/edition/Ainslee_s_Magazine/DYkXAQAAMAAJ</dc:source>
+		<!-- The Elixir of Love, page 179 -->
+		<dc:source>https://archive.org/details/purplefinewomen0000edga</dc:source>
+		<!-- The Nameless Shame -->
+		<dc:source>https://archive.org/details/sim_ainslees_1903-04_11_3</dc:source>
+		<!-- The Top of the Heap, page 140 -->
+		<dc:source>https://archive.org/details/sim_ainslees_1903-06_11_5</dc:source>
+		<!-- Daughters of the Rich -->
+		<dc:source>https://archive.org/details/daughtersofrich00saltrich</dc:source>
+		<!-- The Splendid Lie, page 116 -->
+		<dc:source>https://archive.org/details/sim_ainslees_1912-07_29_6</dc:source>
+		<!-- The Suspect, v.30 (1912-13), page 540,
+		The Bomb, v.31 (1913) page 474,
+		The Plot, v.31 (1913) page 597  -->
+		<dc:source>https://catalog.hathitrust.org/Record/009367117</dc:source>
+		<!-- White Gloves, page 102 -->
+		<dc:source>https://archive.org/details/sim_munseys-magazine_1913-04_49_1</dc:source>
+		<!-- The Falsehood Shop, page 123 -->
+		<dc:source>https://archive.org/details/sim_smart-set_1913-07_40_3</dc:source>
+		<!-- The Proper Thing, v.24 1913 Jul-Dec, page 596,
+		Once is Enough, v.24 1913 Jul-Dec, page 786,
+		A Boy and His Girl, v.25 1914 Jan-Jun, page 485,
+		Their Only Way, v.25 1914 Jan-Jun, page 661 -->
+		<dc:source>https://catalog.hathitrust.org/Record/000542796</dc:source>
+		<!-- A Business Man, page 89 -->
+		<dc:source>https://archive.org/details/HearstsMagazineV25n03Mar1914cmbEXciter</dc:source>
+		<!-- An Old-Fashioned Man, page 22, 64 -->
+		<dc:source>https://archive.org/details/sim_harpers-bazaar_harpers-bazar_1915-06_50_6</dc:source>
+		<!-- The Golden Chimera, page 686 -->
+		<dc:source>https://archive.org/details/sim_munseys-magazine_1917-01_59_4</dc:source>
+		<!-- The Verdict, page 364 -->
+		<dc:source>https://archive.org/details/sim_munseys-magazine_1917-04_60_3</dc:source>
+		<!-- The Impostor -->
+		<dc:source>https://archive.org/details/sim_ainslees_1917-05_39_4</dc:source>
+		<!-- The Goblin Girl, page 87 -->
+		<dc:source>https://archive.org/details/sim_ainslees_1919-10_44_3</dc:source>
+		<meta property="se:production-notes">Edgar Saltus frequently reused premises and plotlines. An editorial selection has been made to avoid overlap with other stories and eligible SE productions. The following stories have been excluded:
+		"Enthralled" is a plot duplicate of "The Impostor."
+		Elements of "A Bouquet of Illusions" were reused twice; the frame in "The Plot" and the actual plot in the novel The Ghost Girl.
+		"The Princess of the Golden Isles" is a plot duplicate of "The Golden Chimera" and "The Collapsible Husband."
+		"The Princess of the Sun" is a plot duplicate of "The Goblin Girl."
+		"Alma Aldorata" was reused in "The Ghost Story" and The Ghost Girl.
+		"The Shudder" has the same reveal as "The Grand Duke's Rubies", and elements of the story have been reused in "The Verdict" and The Paliser Case.
+		"The Collapsible Husband and other meddlers in the Caxton Case" is a plot duplicate of "The Princess of the Golden Isles" and "The Golden Chimera."
+		"The Ghost Story" was the basis for the novel The Ghost Girl.
 		</meta>
-		<dc:language>LANG</dc:language>
-		<dc:source>PG_URL</dc:source>
-		<dc:source>IA_URL</dc:source>
-		<meta property="se:production-notes">PRODUCTION_NOTES</meta>
 		<meta property="se:word-count">WORD_COUNT</meta>
 		<meta property="se:reading-ease.flesch">READING_EASE</meta>
-		<meta property="se:url.encyclopedia.wikipedia">EBOOK_WIKI_URL</meta>
 		<meta property="se:url.vcs.github">https://github.com/standardebooks/edgar-saltus_short-fiction</meta>
 		<dc:creator id="author">Edgar Saltus</dc:creator>
 		<meta property="file-as" refines="#author">Saltus, Edgar</meta>
-		<meta property="se:name.person.full-name" refines="#author">CONTRIBUTOR_FULL_NAME</meta>
+		<meta property="se:name.person.full-name" refines="#author">Edgar Evertson Saltus</meta>
 		<meta property="se:url.encyclopedia.wikipedia" refines="#author">https://en.wikipedia.org/wiki/Edgar_Saltus</meta>
 		<meta property="se:url.authority.nacoaf" refines="#author">http://id.loc.gov/authorities/names/n80036685</meta>
+		<meta property="role" refines="#author" scheme="marc:relators">ann</meta>
 		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
-		<dc:contributor id="artist">COVER_ARTIST</dc:contributor>
-		<meta property="file-as" refines="#artist">COVER_ARTIST_SORT</meta>
-		<meta property="se:url.encyclopedia.wikipedia" refines="#artist">COVER_ARTIST_WIKI_URL</meta>
-		<meta property="se:url.authority.nacoaf" refines="#artist">COVER_ARTIST_NACOAF_URI</meta>
+		<dc:contributor id="artist">Colin Campbell Cooper</dc:contributor>
+		<meta property="file-as" refines="#artist">Cooper, Colin Campbell</meta>
+		<meta property="se:url.encyclopedia.wikipedia" refines="#artist">https://en.wikipedia.org/wiki/Colin_Campbell_Cooper</meta>
+		<meta property="se:url.authority.nacoaf" refines="#artist">http://id.loc.gov/authorities/names/n81107915</meta>
 		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
-		<dc:contributor id="transcriber-1">TRANSCRIBER_1</dc:contributor>
-		<meta property="file-as" refines="#transcriber-1">TRANSCRIBER_1_SORT</meta>
-		<meta property="se:url.homepage" refines="#transcriber-1">TRANSCRIBER_1_URL</meta>
+		<!-- Eden, The Pace That Kills, A Transient Guest, The Grand Duke's Rubies, A Modern Maid of Athens, Fausta
+		Mary Magdalen -->
+		<dc:contributor id="transcriber-1">Adam Buchbinder</dc:contributor>
+		<meta property="file-as" refines="#transcriber-1">Buchbinder, Adam</meta>
 		<meta property="role" refines="#transcriber-1" scheme="marc:relators">trc</meta>
-		<dc:contributor id="transcriber-2">TRANSCRIBER_2</dc:contributor>
-		<meta property="file-as" refines="#transcriber-2">TRANSCRIBER_2_SORT</meta>
-		<meta property="se:url.homepage" refines="#transcriber-2">TRANSCRIBER_2_URL</meta>
+		<dc:contributor id="transcriber-2">Mary Meehan</dc:contributor>
+		<meta property="file-as" refines="#transcriber-2">Meehan, Mary</meta>
 		<meta property="role" refines="#transcriber-2" scheme="marc:relators">trc</meta>
 		<dc:contributor id="transcriber-3">Distributed Proofreaders</dc:contributor>
 		<meta property="file-as" refines="#transcriber-3">Distributed Proofreaders</meta>
 		<meta property="se:url.homepage" refines="#transcriber-3">https://www.pgdp.net/</meta>
 		<meta property="role" refines="#transcriber-3" scheme="marc:relators">trc</meta>
-		<dc:contributor id="producer-1">PRODUCER</dc:contributor>
-		<meta property="file-as" refines="#producer-1">PRODUCER_SORT</meta>
-		<meta property="se:url.homepage" refines="#producer-1">PRODUCER_URL</meta>
+		<dc:contributor id="producer-1">Bob Reus</dc:contributor>
+		<meta property="file-as" refines="#producer-1">Reus, Bob</meta>
+		<meta property="se:url.homepage" refines="#producer-1">https://www.bobre.us/</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">blw</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">cov</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">mrk</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">pfr</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">trc</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">tyg</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">wat</meta>
 	</metadata>
 	<manifest>
 		<item href="css/core.css" id="core.css" media-type="text/css"/>
@@ -117,7 +203,6 @@
 		<item href="text/the-pace-that-kills.xhtml" id="the-pace-that-kills.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/the-plot.xhtml" id="the-plot.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/the-proper-thing.xhtml" id="the-proper-thing.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/the-shudder.xhtml" id="the-shudder.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/the-splendid-lie.xhtml" id="the-splendid-lie.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/the-suspect.xhtml" id="the-suspect.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/the-top-of-the-heap.xhtml" id="the-top-of-the-heap.xhtml" media-type="application/xhtml+xml"/>
@@ -132,12 +217,12 @@
 		<itemref idref="titlepage.xhtml"/>
 		<itemref idref="imprint.xhtml"/>
 		<itemref idref="eden.xhtml"/>
-		<itemref idref="the-pace-that-kills.xhtml"/>
 		<itemref idref="a-transaction-in-hearts.xhtml"/>
 		<itemref idref="a-transient-guest.xhtml"/>
 		<itemref idref="the-grand-dukes-rubies.xhtml"/>
 		<itemref idref="a-maid-of-modern-athens.xhtml"/>
 		<itemref idref="fausta.xhtml"/>
+		<itemref idref="the-pace-that-kills.xhtml"/>
 		<itemref idref="mary-magdalen.xhtml"/>
 		<itemref idref="the-facts-in-the-curious-case-of-h-hyrtl-esq.xhtml"/>
 		<itemref idref="madam-sapphira.xhtml"/>
@@ -149,7 +234,6 @@
 		<itemref idref="the-top-of-the-heap.xhtml"/>
 		<itemref idref="daughters-of-the-rich.xhtml"/>
 		<itemref idref="the-splendid-lie.xhtml"/>
-		<itemref idref="the-shudder.xhtml"/>
 		<itemref idref="the-suspect.xhtml"/>
 		<itemref idref="the-bomb.xhtml"/>
 		<itemref idref="white-gloves.xhtml"/>
