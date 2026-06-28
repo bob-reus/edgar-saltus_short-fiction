@@ -11,6 +11,10 @@ q{
 	font-style: italic;
 }
 
+q.telegram{
+	font-style: normal;
+}
+
 /* All epigraphs */
 [epub|type~="epigraph"]{
 	font-style: italic;
@@ -18,19 +22,10 @@ q{
 	-epub-hyphens: none;
 }
 
-[epub|type~="epigraph"] em,
-[epub|type~="epigraph"] i{
-	font-style: normal;
-}
-
 [epub|type~="epigraph"] cite{
 	font-style: normal;
 	font-variant: small-caps;
 	margin-top: 1em;
-}
-
-[epub|type~="epigraph"] cite i{
-	font-style: italic;
 }
 /* End all epigraphs */
 
@@ -69,25 +64,24 @@ blockquote[xml|lang]{
 }
 
 /* Poetry, verse and songs */
-[epub|type~="z3998:lyrics"] p,
-[epub|type~="z3998:poem"] p{
+[epub|type~="z3998:song"] p,
+[epub|type~="z3998:poem"] p,
+[epub|type~="z3998:verse"] p{
 	text-align: initial;
 	text-indent: 0;
 }
 
-[epub|type~="z3998:poem"] p + p{
-	margin-top: 1em;
-}
-
-[epub|type~="z3998:lyrics"] p > span,
-[epub|type~="z3998:poem"] p > span{
+[epub|type~="z3998:song"] p > span,
+[epub|type~="z3998:poem"] p > span,
+[epub|type~="z3998:verse"] p > span{
 	display: block;
 	padding-left: 1em;
 	text-indent: -1em;
 }
 
-[epub|type~="z3998:lyrics"] p > span + br,
-[epub|type~="z3998:poem"] p > span + br{
+[epub|type~="z3998:song"] p > span + br,
+[epub|type~="z3998:poem"] p > span + br,
+[epub|type~="z3998:verse"] p > span + br{
 	display: none;
 }
 
@@ -121,11 +115,7 @@ footer{
 	text-indent: 0;
 }
 
-[epub|type~="z3998:salutation"] + p{
-	text-indent: 0;
-}
-
-p[epub|type~="z3998:signature"]{
+span[epub|type~="z3998:signature"]{
 	font-variant: small-caps;
 }
 
@@ -155,29 +145,27 @@ p[epub|type~="z3998:signature"]{
 	font-style: italic;
 	margin: 1em;
 }
-
-[epub|type~="z3998:dramatis-personae"] ul + p{
-	margin-top: 2em;
-}
 /* End Dramatis Personae */
 
-/* Front matter */
+/* Additional front matter styling */
 section[epub|type~="dedication"],
-section[epub|type~="dramatis-personae"]{
+section[epub|type~="z3998:dramatis-personae"]{
 	break-after: always;
 	break-before: always;
 }
 
 section[epub|type~="dedication"]{
+	/* narrower for better alignment of the dateline */
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 40em;
 }
 
 section[epub|type~="dedication"] > footer{
+	font-size: small;
 	font-style: italic;
-	margin-top: 3em;
-	text-align: left;
+	margin-top: 1em;
+	text-align: initial;
 	width: 100%;
 }
 
@@ -186,6 +174,11 @@ section[epub|type~="dedication"] > p{
 	font-variant: all-small-caps;
 }
 
+#dedication-1{
+	font-style: initial;
+}
+
+#dedication-2 span,
 #dedication-3 span{
 	font-size: smaller;
 }
@@ -210,6 +203,20 @@ section[epub|type~="dedication"] > p{
 #mary-magdalen-10 blockquote p{
 	text-align: center;
 	text-indent: initial;
+}
+
+#mary-magdalen-10 i[xml|lang~="jpa"]{
+	font-size: larger;
+}
+
+#the-facts-in-the-curious-case-of-h-hyrtl-esq p[xml|lang]{
+	font-style: italic;
+	text-align: initial;
+	text-indent: initial;
+}
+
+#the-facts-in-the-curious-case-of-h-hyrtl-esq p[xml|lang] i{
+	font-style: initial;
 }
 
 #madam-sapphira-18 blockquote{
