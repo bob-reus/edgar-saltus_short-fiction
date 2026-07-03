@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<se-lint-ignore>
+	<file path="a-drama-in-a-dining-room.xhtml">
+		<ignore code="y-035">
+			<line>74</line>
+			<reason>The single letter that triggers this warning is the "e" in "Rosa e Silva", which does not require semantics.</reason>
+		</ignore>
+	</file>
+	<file path="local.css">
+		<ignore code="c-009">
+			<line>33</line>
+			<reason>Part of S.E. dedication base styles</reason>
+		</ignore>
+		<ignore code="c-009">
+			<line>45</line>
+			<reason>Part of S.E. dedication base styles</reason>
+		</ignore>
+		<ignore code="c-009">
+			<line>151</line>
+			<reason>Overriding S.E. dedication base styles</reason>
+		</ignore>
+		<ignore code="c-009">
+			<line>157</line>
+			<reason>Overriding S.E. dedication base styles</reason>
+		</ignore>
+	</file>
+</se-lint-ignore>
