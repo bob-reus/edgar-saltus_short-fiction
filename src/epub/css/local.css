@@ -174,16 +174,16 @@ section[epub|type~="dedication"] > p{
 	font-variant: all-small-caps;
 }
 
-#dedication-1{
+#eden-dedication{
 	font-style: initial;
 }
 
-#dedication-2 span,
-#dedication-3 span{
+#a-transaction-in-hearts-dedication span,
+#the-pace-that-kills-dedication span{
 	font-size: smaller;
 }
 
-#dedication-3 b{
+#the-pace-that-kills-dedication b{
 	font-style: initial;
 }
 
