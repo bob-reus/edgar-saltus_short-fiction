@@ -29,6 +29,28 @@ q.telegram{
 }
 /* End all epigraphs */
 
+/* Epigraphs in section headers */
+article > header [epub|type~="epigraph"],
+section > header [epub|type~="epigraph"]{
+	display: inline-block;
+	margin: auto;
+	max-width: 80%;
+	text-align: initial;
+}
+
+article > header [epub|type~="epigraph"] + *,
+section > header [epub|type~="epigraph"] + *{
+	margin-top: 3em;
+}
+
+@supports(display: table){
+	article > header [epub|type~="epigraph"],
+	section > header [epub|type~="epigraph"]{
+		display: table;
+	}
+}
+/* End epigraphs in section headers */
+
 /* Centered dedications */
 section[epub|type~="dedication"]{
 	text-align: center;
@@ -192,7 +214,8 @@ section[epub|type~="dedication"] > p{
 	font-variant: initial;
 }
 
-#the-grand-dukes-rubies blockquote{
+#the-grand-dukes-rubies blockquote,
+#madam-sapphira-18 blockquote{
 	text-align: center;
 }
 
@@ -217,8 +240,4 @@ section[epub|type~="dedication"] > p{
 
 #the-facts-in-the-curious-case-of-h-hyrtl-esq p[xml|lang] i{
 	font-style: initial;
-}
-
-#madam-sapphira-18 blockquote{
-	text-align: center;
 }
