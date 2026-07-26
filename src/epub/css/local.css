@@ -169,6 +169,10 @@ section[epub|type~="z3998:dramatis-personae"]{
 	break-before: always;
 }
 
+section[epub|type~="z3998:dramatis-personae"] i{
+	font-style: normal;
+}
+
 section[epub|type~="dedication"] > p{
 	font-size: larger;
 	font-variant: small-caps;
@@ -198,7 +202,7 @@ section[epub|type~="dedication"] > p{
 	text-indent: initial;
 }
 
-#mary-magdalen-10 i[xml|lang~="jpa"]{
+#mary-magdalen-10 span[xml|lang~="jpa"]{
 	font-size: larger;
 }
 
