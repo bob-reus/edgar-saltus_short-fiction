@@ -213,6 +213,11 @@ section[epub|type~="dedication"] > p{
 	font-size: larger;
 }
 
+#the-facts-in-the-curious-case-of-h-hyrtl-esq > header b{
+	display: inline-block;
+	margin-bottom: 1em;
+}
+
 #the-facts-in-the-curious-case-of-h-hyrtl-esq p[xml|lang]{
 	font-style: italic;
 	text-align: initial;
