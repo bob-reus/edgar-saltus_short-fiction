@@ -30,22 +30,15 @@ q.telegram{
 /* End all epigraphs */
 
 /* Epigraphs in section headers */
-article > header [epub|type~="epigraph"],
-section > header [epub|type~="epigraph"]{
+article > header [epub|type~="epigraph"]{
 	display: inline-block;
 	margin: auto;
 	max-width: 80%;
 	text-align: initial;
 }
 
-article > header [epub|type~="epigraph"] + *,
-section > header [epub|type~="epigraph"] + *{
-	margin-top: 3em;
-}
-
 @supports(display: table){
-	article > header [epub|type~="epigraph"],
-	section > header [epub|type~="epigraph"]{
+	article > header [epub|type~="epigraph"]{
 		display: table;
 	}
 }
@@ -188,10 +181,6 @@ section[epub|type~="dedication"] > p{
 #a-transaction-in-hearts-dedication span,
 #the-pace-that-kills-dedication span{
 	font-size: smaller;
-}
-
-#the-pace-that-kills-dedication b{
-	font-style: initial;
 }
 
 /* One-offs */
