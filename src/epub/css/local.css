@@ -179,7 +179,11 @@ section[epub|type~="dedication"] > p{
 }
 
 #eden-dedication{
-	font-style: initial;
+	font-style: italic;
+}
+
+#eden-dedication i{
+	font-style: normal;
 }
 
 #a-transaction-in-hearts-dedication span,
